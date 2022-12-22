@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="OnlineGrocery.View.Admin.AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="../../Asset/Libs/Bootstrap/css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-success bg-success text-light">
+  <a class="navbar-brand text-light" href="#">Online Grocery</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="#">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="Products.aspx">Produts</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-light" href="Categories.aspx">Categories</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-light" href="Sellers.aspx">Sellers</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-light" href="Dashboard.aspx">Dashboard</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link text-light" href="../Login.aspx">Logout</a>
+      </li>
+     </ul>
+   </div>
+</nav>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Mybody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
